@@ -1,0 +1,40 @@
+/* Basic styling for the auto-complete component */
+.autocomplete {
+    position: relative;
+    width: 300px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.suggestions li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.suggestions li.selected {
+    background-color: #ddd;
+}
+
+mark {
+    background-color: yellow;
+}
